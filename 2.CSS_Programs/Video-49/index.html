@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-Fit</title>
+
+    <style>
+
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        .container
+        {
+            height: 500px;
+            width: 400px;
+            border: 2px solid black;
+            margin: 5px;
+            background-image: url(https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg);
+            /* background-position: top right; */
+            background-position: center center;
+        }
+
+        .container2
+        {
+            height: 500px;
+            width: 400px;
+            border: 2px solid black;
+            margin: 5px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaqqC6sH_Zpdv7wlL-c90OoznPu_Cx2c5wRA&usqp=CAU);
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        /* img
+        {
+            height:500px;
+            width: 400px;
+            object-fit: cover;
+            object-fit: contain;
+            object-position: bottom right;
+            object-position: 10px 20px;
+            object-position: top right;
+            object-fit: fill;
+            object-fit: scale-down;
+            object-fit: cover;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+     <!-- <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg" alt="">        -->
+    </div>
+
+    <div class="container2"></div>
+</body>
+</html>
